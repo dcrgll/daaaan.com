@@ -16,13 +16,16 @@ export default function Page(): JSX.Element {
 						web apps that bring in millions every year
 					</a>
 					,{' '}
-					<a href="" className="underline text-orange-400">
+					<a
+						href="https://casdron.co.uk/"
+						className="underline text-orange-400"
+					>
 						e-commerce sites that have stood the test of time
 					</a>
 					,{' '}
 					<a
 						href="https://creativefolks.co.uk"
-						className="underline text-emerald-400"
+						className="underline text-sky-400"
 					>
 						design agency things
 					</a>
@@ -33,7 +36,14 @@ export default function Page(): JSX.Element {
 					>
 						sites for bands touring the world
 					</a>
-					, lots and lots of corporate bullshit,{' '}
+					,{' '}
+					<a
+						href="https://www.foodmadegood.org"
+						className="underline text-amber-400"
+					>
+						lots and lots of corporate <del>bullshit</del> stuff
+					</a>
+					,{' '}
 					<a
 						href="https://spotify-app.cargill.dev"
 						className="underline text-green-400"
@@ -53,7 +63,7 @@ export default function Page(): JSX.Element {
 					pals I&apos;ll charge you less.
 				</p>
 				<div>
-					<h2 className="font-bold mt-8">FAQ</h2>
+					<h2 className="font-bold mt-8 text-2xl">FAQ</h2>
 					<h3 className="underline mt-4">
 						I want a website, how do I get one?
 					</h3>
