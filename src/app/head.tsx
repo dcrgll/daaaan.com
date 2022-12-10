@@ -10,7 +10,7 @@ export default function Head() {
 				content="You're into websites, I'm good at websites."
 			/>
 			<meta property="og:type" content="" />
-			<meta property="og:image" content="/who-owns-staging.png" />
+			<meta property="og:image" content="/daaan-og.png" />
 			<link
 				rel="apple-touch-icon"
 				sizes="180x180"
