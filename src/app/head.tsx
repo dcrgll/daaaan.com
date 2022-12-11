@@ -4,13 +4,19 @@ export default function Head() {
 			<title>Dan Builds Things</title>
 			<meta property="og:title" content="Dan Builds Things" />
 			<meta property="og:site_name" content="Dan Builds Things" />
-			<meta property="og:url" content="https://daaaan.com" />
+			<meta property="og:url" content="https://www.daaaan.com" />
 			<meta
 				property="og:description"
 				content="You're into websites, I'm good at websites."
 			/>
 			<meta property="og:type" content="" />
-			<meta property="og:image" content="/daaan-og.png" />
+			<meta
+				property="og:image"
+				content="https://www.daaaan.com/daaaan-og.png"
+			/>
+			<meta name="twitter:card" content="summary" />
+			<meta name="twitter:site" content="@irnbrute_" />
+			<meta name="twitter:creator" content="@irnbrute_" />
 			<link
 				rel="apple-touch-icon"
 				sizes="180x180"
