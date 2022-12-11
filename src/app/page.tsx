@@ -13,6 +13,7 @@ export default function Page(): JSX.Element {
 						<a
 							href="https://www.studentbeans.com"
 							className="underline text-red-400"
+							data-splitbee-event="Click SB"
 						>
 							web apps that bring in millions every year
 						</a>
@@ -20,6 +21,7 @@ export default function Page(): JSX.Element {
 						<a
 							href="https://casdron.co.uk/"
 							className="underline text-orange-400"
+							data-splitbee-event="Click Casdron"
 						>
 							e-commerce sites that have stood the test of time
 						</a>
@@ -27,6 +29,7 @@ export default function Page(): JSX.Element {
 						<a
 							href="https://creativefolks.co.uk"
 							className="underline text-sky-400"
+							data-splitbee-event="Click CF"
 						>
 							design agency things
 						</a>
@@ -34,6 +37,7 @@ export default function Page(): JSX.Element {
 						<a
 							href="https://conjureruk.com"
 							className="underline text-violet-400"
+							data-splitbee-event="Click Conjurer"
 						>
 							sites for bands touring the world
 						</a>
@@ -41,6 +45,7 @@ export default function Page(): JSX.Element {
 						<a
 							href="https://www.foodmadegood.org"
 							className="underline text-amber-400"
+							data-splitbee-event="Click FMG"
 						>
 							lots and lots of corporate <del>bullshit</del> stuff
 						</a>
@@ -48,6 +53,7 @@ export default function Page(): JSX.Element {
 						<a
 							href="https://spotify-app.cargill.dev"
 							className="underline text-green-400"
+							data-splitbee-event="Click Spotify"
 						>
 							tools that help users find new music to enjoy{' '}
 						</a>
@@ -55,6 +61,7 @@ export default function Page(): JSX.Element {
 						<a
 							href="https://www.cargill.dev"
 							className="underline text-teal-400"
+							data-splitbee-event="Click DC"
 						>
 							silly lil things I like
 						</a>
@@ -76,6 +83,7 @@ export default function Page(): JSX.Element {
 							<a
 								href="mailto:dan@cargill.dev"
 								className="underline text-blue-400"
+								data-splitbee-event="Click Email"
 							>
 								Send me an email
 							</a>{' '}
