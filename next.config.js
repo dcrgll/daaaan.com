@@ -1,17 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+const { withPlausibleProxy } = require('next-plausible')
 const nextConfig = {
-	async rewrites() {
-		return [
-			{
-				source: '/bee.js',
-				destination: 'https://cdn.splitbee.io/sb.js'
-			},
-			{
-				source: '/_hive/:slug',
-				destination: 'https://hive.splitbee.io/:slug'
-			}
-		]
-	},
 	reactStrictMode: true,
 	swcMinify: true,
 	experimental: {
@@ -19,4 +9,7 @@ const nextConfig = {
 	}
 }
 
-module.exports = nextConfig
+module.exports = withPlausibleProxy({
+	domain: 'www.daaaan.com',
+	customDomain: 'https://analytics.cargill.dev'
+})(nextConfig)

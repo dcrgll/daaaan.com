@@ -1,11 +1,17 @@
 'use client'
 import './styles.css'
-import useAnalytics from 'utils/splitbee'
+import PlausibleProvider from 'next-plausible'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-	useAnalytics()
 	return (
 		<html lang="en">
+			<head>
+				<PlausibleProvider
+					domain="www.daaaan.com"
+					customDomain="https://analytics.cargill.dev"
+					selfHosted
+				/>
+			</head>
 			<body>{children}</body>
 		</html>
 	)
