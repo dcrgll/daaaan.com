@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const { withPlausibleProxy } = require('next-plausible')
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
@@ -9,7 +8,4 @@ const nextConfig = {
 	}
 }
 
-module.exports = withPlausibleProxy({
-	domain: 'www.daaaan.com',
-	customDomain: 'https://analytics.cargill.dev'
-})(nextConfig)
+module.exports = nextConfig
