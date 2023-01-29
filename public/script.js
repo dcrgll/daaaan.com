@@ -1,5 +1,7 @@
-const container = document.getElementById("rsf-container");
+const container = document.createElement("rsf-container");
 const frame = document.createElement("iframe");
+
+document.body.appendChild(container);
 
 const modalOpenStyle = [
   "z-index: 2147483000 !important",
