@@ -3,8 +3,8 @@ export default function Head() {
 		<>
 			<title>Dan Builds Things</title>
 			<meta property="og:title" content="Dan Builds Things" />
-			<meta property="og:site_name" content="Dan Builds Things" />
-			<meta property="og:url" content="https://www.daaaan.com" />
+			<meta property="og:site_name" content="Dan Cargill" />
+			<meta property="og:url" content="https://www.cargill.dev" />
 			<meta
 				property="og:description"
 				content="You're into websites, I'm good at websites."
@@ -12,7 +12,7 @@ export default function Head() {
 			<meta property="og:type" content="" />
 			<meta
 				property="og:image"
-				content="https://www.daaaan.com/daaaan-og.png"
+				content="https://www.cargill.dev/daaaan-og.png"
 			/>
 			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:site" content="@irnbrute_" />
