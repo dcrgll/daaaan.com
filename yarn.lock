@@ -24,6 +24,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@corex/deepmerge@npm:^4.0.29":
+  version: 4.0.37
+  resolution: "@corex/deepmerge@npm:4.0.37"
+  checksum: f6f5daf29762f691dbc1104c092639897d65219e809f7c1028f7797e361c7787bd247bfd09e81f31b70386f1611ed9c4c137dd45c404b4da2f606a6cca51c6d8
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^1.4.1":
   version: 1.4.1
   resolution: "@eslint/eslintrc@npm:1.4.1"
@@ -902,6 +909,7 @@ __metadata:
     eslint-config-next: 13.2.1
     next: 13.2.1
     next-plausible: ^3.7.1
+    next-sitemap: ^3.1.54
     postcss: ^8.4.21
     prettier: ^2.8.3
     react: 18.2.0
@@ -2349,6 +2357,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimist@npm:^1.2.7":
+  version: 1.2.8
+  resolution: "minimist@npm:1.2.8"
+  checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
+  languageName: node
+  linkType: hard
+
 "minipass-collect@npm:^1.0.2":
   version: 1.0.2
   resolution: "minipass-collect@npm:1.0.2"
@@ -2489,6 +2504,22 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: b41d2ebd78955dfb2613dd4dfa6c9cef23b6137caf2d0a0ac75d5d3277eee51cd72a7cb78214d65114a0be748019c14c817c5358934fcdbfe0182297d3f87227
+  languageName: node
+  linkType: hard
+
+"next-sitemap@npm:^3.1.54":
+  version: 3.1.54
+  resolution: "next-sitemap@npm:3.1.54"
+  dependencies:
+    "@corex/deepmerge": ^4.0.29
+    minimist: ^1.2.7
+  peerDependencies:
+    "@next/env": "*"
+    next: "*"
+  bin:
+    next-sitemap: bin/next-sitemap.mjs
+    next-sitemap-cjs: bin/next-sitemap.cjs
+  checksum: 946a6ed1d9f2c14bc71a284df50a271f394979da74dc44a0cb5a632865616096426ae3525283c2e8b755efe41aaceef7bd84e8e530a397646731a41c53ac3177
   languageName: node
   linkType: hard
 
