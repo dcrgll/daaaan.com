@@ -5,7 +5,8 @@ import Title from 'components/title'
 export default function Page(): JSX.Element {
 	return (
 		<>
-			<Title>Dan Cargill</Title>
+			<Title>About</Title>
+
 			<Content>
 				<p>
 					Hey, I&apos;m{' '}
@@ -23,24 +24,6 @@ export default function Page(): JSX.Element {
 						</a>
 					</strong>
 					.
-				</p>
-
-				<p className="mt-4">
-					I&apos;m also building{' '}
-					<a
-						href="https://www.payday.so"
-						className="text-red-400 font-bold hover:underline"
-					>
-						Payday
-					</a>
-					,{' '}
-					<a
-						href="https://www.ayybee.xyz"
-						className="text-orange-400 font-bold hover:underline"
-					>
-						Ayybee
-					</a>{' '}
-					and leaving a trail of half-completed projects behind me.
 				</p>
 				<ContactLinks />
 			</Content>

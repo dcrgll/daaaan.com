@@ -1,4 +1,5 @@
 export default function Footer() {
+	return null
 	return (
 		<footer className="w-full flex justify-center my-8 pb-2 bg-white text-xs text-gray-300">
 			<span>

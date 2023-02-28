@@ -1,0 +1,30 @@
+import PropTypes from 'prop-types'
+import Link from 'next/link'
+
+export default function NavigationLink({
+	children,
+	href,
+	active
+}: {
+	children: React.ReactNode
+	href: string
+	active?: boolean
+}) {
+	return (
+		<Link href={href}>
+			<span
+				className={`px-[10px] py-[5px] ${
+					active ? 'bg-gray-100 text-gray-800 ' : 'dark:text-gray-50'
+				} hover:bg-gray-100 transition duration-300 rounded-md  dark:hover:text-gray-800`}
+			>
+				{children}
+			</span>
+		</Link>
+	)
+}
+
+NavigationLink.propTypes = {
+	children: PropTypes.node.isRequired,
+	href: PropTypes.string.isRequired,
+	active: PropTypes.bool
+}
