@@ -10,47 +10,47 @@ export default function Page(): JSX.Element {
 					I&apos;ve worked on a lot of stuff, from{' '}
 					<a
 						href="https://www.studentbeans.com"
-						className="underline text-red-400"
+						className="text-red-400 underline"
 					>
 						web apps that bring in millions every year
 					</a>
 					,{' '}
 					<a
 						href="https://casdron.co.uk/"
-						className="underline text-orange-400"
+						className="text-orange-400 underline"
 					>
 						e-commerce sites that have stood the test of time
 					</a>
 					,{' '}
 					<a
 						href="https://creativefolks.co.uk"
-						className="underline text-sky-400"
+						className="text-sky-400 underline"
 					>
 						design agency things
 					</a>
 					,{' '}
 					<a
 						href="https://conjureruk.com"
-						className="underline text-violet-400"
+						className="text-violet-400 underline"
 					>
 						sites for bands touring the world
 					</a>
 					,{' '}
 					<a
 						href="https://www.foodmadegood.org"
-						className="underline text-amber-400"
+						className="text-amber-400 underline"
 					>
 						lots and lots of corporate <del>bullshit</del> stuff
 					</a>
 					,{' '}
 					<a
 						href="https://spotify-app.cargill.dev"
-						className="underline text-green-400"
+						className="text-green-400 underline"
 					>
 						tools that help users find new music to enjoy{' '}
 					</a>
 					and{' '}
-					<a href="https://www.cargill.dev" className="underline text-teal-400">
+					<a href="https://www.cargill.dev" className="text-teal-400 underline">
 						silly lil things I like
 					</a>
 					.
@@ -61,25 +61,25 @@ export default function Page(): JSX.Element {
 					people who are doing cool stuff.
 				</p>
 				<div>
-					<h2 className="font-bold mt-8 text-2xl">FAQ</h2>
-					<h3 className="underline mt-4 mb-2">
+					<h2 className="mt-8 text-2xl font-bold">FAQ</h2>
+					<h3 className="mt-4 mb-2 underline">
 						I want a website, how do I get one?
 					</h3>
 					<p>
 						Easy! <br />{' '}
 						<a
 							href="mailto:dan@cargill.dev"
-							className="underline text-blue-400"
+							className="text-blue-400 underline"
 						>
 							Send me an email
 						</a>{' '}
 						and I&apos;ll get back to you asap.
 					</p>
-					<h3 className="underline mt-4 mb-2">Why are you doing this?</h3>
+					<h3 className="mt-4 mb-2 underline">Why are you doing this?</h3>
 					<p>
 						I want to <del>make money</del> help people.
 					</p>
-					<h3 className="underline mt-4 mb-2">
+					<h3 className="mt-4 mb-2 underline">
 						Why does this website look bad?
 					</h3>
 					<p>I promise I&apos;ll spend longer on yours.</p>

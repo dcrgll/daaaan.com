@@ -29,14 +29,14 @@ export default function Page(): JSX.Element {
 					I&apos;m also building{' '}
 					<a
 						href="https://www.payday.so"
-						className="text-red-400 font-bold hover:underline"
+						className="font-bold text-red-400 hover:underline"
 					>
 						Payday
 					</a>
 					,{' '}
 					<a
 						href="https://www.ayybee.xyz"
-						className="text-orange-400 font-bold hover:underline"
+						className="font-bold text-orange-400 hover:underline"
 					>
 						Ayybee
 					</a>{' '}

@@ -13,10 +13,10 @@ const mono = Space_Mono({
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
-		<body className="dark:bg-gray-800 antialiased max-w-4xl" style={mono.style}>
-			<div className="mb-40 flex flex-col md:flex-row md:mx-4 mt-8 md:mt-20 lg:mt-60 lg:mx-auto px-4 md:px-20">
+		<body className="max-w-4xl antialiased dark:bg-gray-800" style={mono.style}>
+			<div className="mb-40 mt-8 flex flex-col px-4 md:mx-4 md:mt-20 md:flex-row md:px-20 lg:mx-auto lg:mt-60">
 				<Navigation />
-				<main className="flex flex-col w-f sm:max-w-md mt-20 lg:mt-0">
+				<main className="w-f mt-20 flex flex-col sm:max-w-md lg:mt-0">
 					{children}
 					<Footer />
 				</main>

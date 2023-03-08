@@ -7,7 +7,7 @@ export default function DarkModeToggle() {
 				id="header__moon"
 				onClick={toLightMode}
 				title="Switch to light mode"
-				className="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-50 hidden dark:flex justify-end"
+				className="focus:shadow-outline relative hidden h-10 w-10 justify-end text-gray-50 focus:outline-none dark:flex"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ export default function DarkModeToggle() {
 				id="header__moon"
 				onClick={toDarkMode}
 				title="Switch to dark mode"
-				className="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500 dark:hidden flex justify-end"
+				className="focus:shadow-outline relative flex h-10 w-10 justify-end text-gray-500 focus:outline-none dark:hidden"
 			>
 				<svg style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
 					<path
@@ -56,7 +56,7 @@ export default function DarkModeToggle() {
 		)
 	}
 
-	return <div className="w-14 h-8 pl-2 md:pl-0">{renderToggle()}</div>
+	return <div className="h-8 w-14 pl-2 md:pl-0">{renderToggle()}</div>
 }
 
 DarkModeToggle.propTypes = {}
