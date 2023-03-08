@@ -1,7 +1,7 @@
 export default function Footer() {
 	return null
 	return (
-		<footer className="w-full flex justify-center my-8 pb-2 bg-white text-xs text-gray-300">
+		<footer className="my-8 flex w-full justify-center bg-white pb-2 text-xs text-gray-300">
 			<span>
 				a{' '}
 				<a href="https://www.cargill.dev" className="underline">
