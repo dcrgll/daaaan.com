@@ -3,9 +3,6 @@ import Navigation from 'components/navigation'
 import PropTypes from 'prop-types'
 import { Space_Mono } from 'next/font/google'
 
-import Notification from 'components/notification'
-import Marquee from 'components/marquee'
-
 const mono = Space_Mono({
 	subsets: ['latin'],
 	weight: ['400', '700']
@@ -21,7 +18,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 					<Footer />
 				</main>
 			</div>
-			<Marquee />
 		</body>
 	)
 }
