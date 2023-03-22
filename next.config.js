@@ -43,6 +43,16 @@ const nextConfig = {
 				source: '/email',
 				destination: 'mailto:dan@cargill.dev',
 				permanent: true
+			},
+			{
+				source: '/casdron',
+				destination: 'https://casdron.co.uk',
+				permanent: false
+			},
+			{
+				source: '/one-planet-plate',
+				destination: 'https://www.oneplanetplate.org',
+				permanent: false
 			}
 		]
 	}

@@ -1,9 +1,9 @@
 import ContactLinks from 'components/contact_links'
 import Content from 'components/content'
 import Title from 'components/title'
-import { usePlausible } from 'next-plausible'
-import Link from 'next/link'
+import Projects from 'components/projects'
 import PrettyLink from 'components/pretty_link'
+import SubTitle from 'components/sub_title'
 
 export default function Page(): JSX.Element {
 	return (
@@ -48,6 +48,7 @@ export default function Page(): JSX.Element {
 					/>{' '}
 					and leaving a trail of half-completed projects behind me.
 				</p>
+				<Projects limit={3} preview />
 				<ContactLinks />
 			</Content>
 		</>
