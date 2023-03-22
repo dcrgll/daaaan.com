@@ -2,22 +2,22 @@ import Link from 'next/link'
 
 const contactLinks = [
 	{
-		href: '/email',
+		href: 'email',
 		text: 'Email',
 		color: 'text-red-400'
 	},
 	{
-		href: '/linkedin',
+		href: 'linkedin',
 		text: 'LinkedIn',
 		color: 'text-blue-400'
 	},
 	{
-		href: '/github',
+		href: 'github',
 		text: 'Github',
 		color: 'text-gray-400'
 	},
 	{
-		href: '/discord',
+		href: 'discord',
 		text: 'Discord',
 		color: 'text-purple-400'
 	}
@@ -32,7 +32,7 @@ export default function ContactLinks() {
 					return (
 						<li key={link.text}>
 							<Link
-								href={link.href}
+								href={`/${link.href}`}
 								className={`font-bold hover:underline ${link.color} plausible-event-name=${link.text}`}
 								rel="noopener noreferrer"
 								target="_blank"

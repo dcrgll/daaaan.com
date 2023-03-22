@@ -11,7 +11,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
 			<head>
-				<PlausibleProvider domain="cargill.dev" />
+				<PlausibleProvider
+					domain="cargill.dev"
+					taggedEvents={true}
+				/>
 			</head>
 			<LayoutWrapper>{children}</LayoutWrapper>
 		</html>

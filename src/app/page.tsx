@@ -20,7 +20,7 @@ export default function Page(): JSX.Element {
 					<strong>
 						<Link
 							href="/studentbeans"
-							className="text-teal-400 hover:underline"
+							className="text-teal-400 hover:underline plausible-event-name=StudentBeans"
 						>
 							StudentBeans
 						</Link>
