@@ -33,7 +33,7 @@ export default function ContactLinks() {
 						<li key={link.text}>
 							<Link
 								href={link.href}
-								className={`font-bold hover:underline ${link.color}`}
+								className={`font-bold hover:underline ${link.color} plausible-event-name=${link.text}`}
 								rel="noopener noreferrer"
 								target="_blank"
 							>
