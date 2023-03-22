@@ -45,8 +45,6 @@ export const metadata = {
 		images: ['https://www.cargill.dev/daaaan-og.png']
 	},
 	icons: {
-		icon: '/icon.png',
-		shortcut: '/shortcut-icon.png',
 		apple: '/apple-touch-icon.png',
 		other: [
 			{
