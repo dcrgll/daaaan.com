@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import PrettyLink from 'components/pretty_link'
 
 const contactLinks = [
 	{
@@ -31,14 +31,7 @@ export default function ContactLinks() {
 				{contactLinks.map(link => {
 					return (
 						<li key={link.text}>
-							<Link
-								href={`/${link.href}`}
-								className={`font-bold hover:underline ${link.color} plausible-event-name=${link.text}`}
-								rel="noopener noreferrer"
-								target="_blank"
-							>
-								{link.text}
-							</Link>
+							<PrettyLink link={link} />
 						</li>
 					)
 				})}
