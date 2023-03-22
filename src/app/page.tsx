@@ -1,8 +1,11 @@
 import ContactLinks from 'components/contact_links'
 import Content from 'components/content'
 import Title from 'components/title'
+import { usePlausible } from 'next-plausible'
+import Link from 'next/link'
 
 export default function Page(): JSX.Element {
+	const plausible = usePlausible()
 	return (
 		<>
 			<Title>Dan Cargill</Title>
@@ -15,31 +18,35 @@ export default function Page(): JSX.Element {
 					. I&apos;m a <strong>software developer</strong> currently playing the
 					internet at{' '}
 					<strong>
-						<a
-							href="https://studentbeans.com"
+						<Link
+							href="/studentbeans"
 							className="text-teal-400 hover:underline"
 						>
 							StudentBeans
-						</a>
+						</Link>
 					</strong>
 					.
 				</p>
 
 				<p className="mt-4">
 					I&apos;m also building{' '}
-					<a
-						href="https://www.payday.so"
+					<Link
+						href="/payday"
 						className="font-bold text-red-400 hover:underline"
+						rel="noopener noreferrer"
+						target="_blank"
 					>
 						Payday
-					</a>
+					</Link>
 					,{' '}
-					<a
-						href="https://www.ayybee.xyz"
+					<Link
+						href="/ayybee"
 						className="font-bold text-orange-400 hover:underline"
+						rel="noopener noreferrer"
+						target="_blank"
 					>
 						Ayybee
-					</a>{' '}
+					</Link>{' '}
 					and leaving a trail of half-completed projects behind me.
 				</p>
 				<ContactLinks />

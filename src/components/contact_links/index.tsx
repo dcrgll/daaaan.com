@@ -1,23 +1,23 @@
-import PropTypes from 'prop-types'
+import Link from 'next/link'
 
 const contactLinks = [
 	{
-		href: 'mailto:dan@cargill.dev',
+		href: '/email',
 		text: 'Email',
 		color: 'text-red-400'
 	},
 	{
-		href: 'https://www.linkedin.com/in/dcrgll',
+		href: '/linkedin',
 		text: 'LinkedIn',
 		color: 'text-blue-400'
 	},
 	{
-		href: 'https://github.com/dcrgll',
+		href: '/github',
 		text: 'Github',
 		color: 'text-gray-400'
 	},
 	{
-		href: 'https://discord.com/users/243843255928750090',
+		href: '/discord',
 		text: 'Discord',
 		color: 'text-purple-400'
 	}
@@ -31,12 +31,14 @@ export default function ContactLinks() {
 				{contactLinks.map(link => {
 					return (
 						<li key={link.text}>
-							<a
+							<Link
 								href={link.href}
 								className={`font-bold hover:underline ${link.color}`}
+								rel="noopener noreferrer"
+								target="_blank"
 							>
 								{link.text}
-							</a>
+							</Link>
 						</li>
 					)
 				})}
