@@ -3,9 +3,9 @@ import Content from 'components/content'
 import Title from 'components/title'
 import { usePlausible } from 'next-plausible'
 import Link from 'next/link'
+import PrettyLink from 'components/pretty_link'
 
 export default function Page(): JSX.Element {
-	const plausible = usePlausible()
 	return (
 		<>
 			<Title>Dan Cargill</Title>
@@ -18,35 +18,34 @@ export default function Page(): JSX.Element {
 					. I&apos;m a <strong>software developer</strong> currently playing the
 					internet at{' '}
 					<strong>
-						<Link
-							href="/studentbeans"
-							className="text-teal-400 hover:underline plausible-event-name=StudentBeans"
-						>
-							StudentBeans
-						</Link>
+						<PrettyLink
+							link={{
+								href: 'studentbeans',
+								text: 'StudentBeans',
+								color: 'text-teal-400'
+							}}
+						/>
 					</strong>
 					.
 				</p>
 
 				<p className="mt-4">
 					I&apos;m also building{' '}
-					<Link
-						href="/payday"
-						className="font-bold text-red-400 hover:underline plausible-event-name=Payday"
-						rel="noopener noreferrer"
-						target="_blank"
-					>
-						Payday
-					</Link>
+					<PrettyLink
+						link={{
+							href: 'payday',
+							text: 'Payday',
+							color: 'text-red-400'
+						}}
+					/>
 					,{' '}
-					<Link
-						href="/ayybee"
-						className="font-bold text-orange-400 hover:underline plausible-event-name=Ayybee"
-						rel="noopener noreferrer"
-						target="_blank"
-					>
-						Ayybee
-					</Link>{' '}
+					<PrettyLink
+						link={{
+							href: 'ayybee',
+							text: 'Ayybee',
+							color: 'text-orange-400'
+						}}
+					/>{' '}
 					and leaving a trail of half-completed projects behind me.
 				</p>
 				<ContactLinks />
