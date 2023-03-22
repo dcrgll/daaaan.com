@@ -32,7 +32,7 @@ export default function Page(): JSX.Element {
 					I&apos;m also building{' '}
 					<Link
 						href="/payday"
-						className="font-bold text-red-400 hover:underline"
+						className="font-bold text-red-400 hover:underline plausible-event-name=Payday"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
@@ -41,7 +41,7 @@ export default function Page(): JSX.Element {
 					,{' '}
 					<Link
 						href="/ayybee"
-						className="font-bold text-orange-400 hover:underline"
+						className="font-bold text-orange-400 hover:underline plausible-event-name=Ayybee"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
