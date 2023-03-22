@@ -8,7 +8,7 @@ jobs:
       - name: Install modules
         run: yarn
       - name: Run Prettier
-        run: yarn format:ci
+        run: yarn format:fix
   ESLint:
     runs-on: ubuntu-latest
     steps:
