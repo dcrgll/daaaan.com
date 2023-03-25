@@ -49,7 +49,7 @@ export default function Page(): JSX.Element {
 				</p>
 
 				{/* @ts-expect-error Server Component */}
-				<Projects limit={3} preview />
+				<Projects preview />
 				<ContactLinks />
 			</Content>
 		</>
