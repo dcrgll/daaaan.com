@@ -9,7 +9,9 @@ export async function GET() {
 	})
 
 	const data = await client
-		.getEntries()
+		.getEntries({
+			order: 'sys.createdAt',
+		})
 		.then((projects: any) => {
 			return modifyObjects(projects.items)
 		})
