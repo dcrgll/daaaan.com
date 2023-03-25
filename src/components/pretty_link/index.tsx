@@ -9,8 +9,11 @@ export default function PrettyLink({
 	link: { href: string; text: string; color: string }
 }) {
 	const plausible = usePlausible()
+
+	const url = link.text === 'View Project' ? link.text : link.href
+
 	return (
-		<NextLink href={`/${link.href}`} legacyBehavior prefetch={false}>
+		<NextLink href={`/${url}`} legacyBehavior prefetch={false}>
 			<a
 				onClick={() => plausible(`Click: ${link.text}`)}
 				className={`font-bold hover:underline ${link.color}`}

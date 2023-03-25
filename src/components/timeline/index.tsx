@@ -3,16 +3,11 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import PrettyLink from 'components/pretty_link'
-
-const Divider = () => {
-	return (
-		<div className="my-8 w-full border border-gray-200 dark:border-gray-600" />
-	)
-}
+import Divider from 'components/divider'
 
 const Year = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<h3 className="mb-4 text-lg font-semibold tracking-tight text-gray-900 dark:text-gray-100 md:text-xl">
+		<h3 className="mb-4 text-lg tracking-tight text-gray-900 underline dark:text-gray-100 md:text-xl">
 			{children}
 		</h3>
 	)
@@ -41,9 +36,7 @@ const Step = ({
 						<path d="M22 4L12 14.01l-3-3" />
 					</g>
 				</svg>
-				<p className="font-medium text-gray-800 underline dark:text-gray-50">
-					{title}
-				</p>
+				<p className="font-semibold text-gray-800 dark:text-gray-50">{title}</p>
 			</div>
 			<p className="ml-6 text-gray-700 dark:text-gray-600">{children}</p>
 		</li>
@@ -77,10 +70,6 @@ const FullTimeline = () => (
 					listen
 				</a>
 				.
-			</Step>
-			<Step title="Solo travelled to Rome 🇮🇹">
-				My first european solo adventure, ate a lot of food and went to see A.S
-				Roma.
 			</Step>
 			<Step title="Joined Boomerang 🪃">
 				A local video game rental comapany, with a national reach. I mainly
@@ -160,7 +149,7 @@ export default function Timeline() {
 						link={{
 							text: 'are building it',
 							href: 'payday',
-							color: 'text-green-600 dark:text-green-300'
+							color: 'text-violet-500 dark:text-green-300'
 						}}
 					/>
 					.
@@ -170,8 +159,8 @@ export default function Timeline() {
 			<Year>2020</Year>
 			<ul>
 				<Step title="Joined CREATIVEFOLKS 🟠">
-					My first full-time role in webdev! I&apos;ve made a lot of cool stuff
-					so far you can check some of these projects out{' '}
+					My first full-time role in webdev! I worked on a lot of stuff and you
+					can check some of these projects out{' '}
 					<Link href="/projects" className="underline">
 						here
 					</Link>
@@ -190,12 +179,6 @@ export default function Timeline() {
 				<Step title="Joined Willow 🟣">
 					Joined Willow Comms as an IT Assistant, split my time between fixing
 					machines and coding web apps & games for clients.
-				</Step>
-				<Step title="Travelled to the US for the first time 🇺🇸">
-					Had an amazing two weeks roaming around NY state.
-				</Step>
-				<Step title="Adopted cat 1 & 2 🐈‍⬛">
-					Hades & Styx will take over the world.
 				</Step>
 				<Step title="Started Learning Next.js ⚛️">
 					It&apos;s still my favourite framework, a joy to use.
