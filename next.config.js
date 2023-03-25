@@ -55,6 +55,9 @@ const nextConfig = {
 				permanent: false
 			}
 		]
+	},
+	images: {
+		domains: ['images.ctfassets.net']
 	}
 }
 

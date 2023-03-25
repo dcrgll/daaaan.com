@@ -7,10 +7,11 @@ export default function Project({
 	item: {
 		id: number
 		name: string
-		category: string
+		tags: string[]
 		href: string
-		imageSrc: string
-		imageAlt: string
+		image: string
+		altText: string
+		blur: string
 	}
 }) {
 	return (
@@ -24,16 +25,28 @@ export default function Project({
 					}}
 				/>
 			</div>
-			<p className="mb-2 text-sm text-gray-500">{item.category}</p>
+
+			<ul className="mb-2 flex space-x-2 text-sm text-gray-500">
+				{item?.tags?.map((tag, i) => {
+					return (
+						<li key={tag}>
+							{tag}
+							{i === item.tags.length - 1 ? '' : ', '}
+						</li>
+					)
+				})}
+			</ul>
 			<div className="aspect-w-4 aspect-h-3 image-frame overflow-hidden rounded-lg bg-gray-50 transition dark:bg-gray-900">
 				<Image
-					src={item.imageSrc}
-					alt={item.imageAlt}
-					className="object-cover object-center"
+					src={item.image}
+					alt={item.altText}
+					className="transition-300 object-cover object-center"
 					width={1360}
 					height={1020}
+					placeholder="blur"
+					blurDataURL={item.blur}
 				/>
-				<div className="flex items-end p-4" aria-hidden="true">
+				<div className="flex items-end" aria-hidden="true">
 					<div className="text-gray-90 w-full rounded-md bg-opacity-75 py-2 px-4 text-center text-sm font-medium dark:text-gray-50">
 						<PrettyLink
 							link={{
