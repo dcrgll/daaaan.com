@@ -30,7 +30,8 @@ async function modifyObjects(list: []) {
 			altText: item.fields.altText,
 			image: 'https:' + item.fields.image.fields.file.url,
 			blur: base64,
-			tags: item.fields.categories
+			tags: item.fields.categories,
+			preview: item.fields.preview
 		}
 	})
 

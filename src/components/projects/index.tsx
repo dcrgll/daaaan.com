@@ -3,10 +3,8 @@ import SubTitle from 'components/sub_title'
 import Link from 'next/link'
 
 export default async function Projects({
-	limit,
 	preview
 }: {
-	limit: number
 	preview: boolean
 }) {
 	const response = await getData()
@@ -14,7 +12,7 @@ export default async function Projects({
 
 	return (
 		<div className="w-full">
-			{preview ? (
+
 				<div className="mt-16 flex space-x-4">
 					<SubTitle>Projects</SubTitle>
 					<Link
@@ -25,10 +23,10 @@ export default async function Projects({
 						<span> &rarr;</span>
 					</Link>
 				</div>
-			) : null}
+
 			<ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:gap-y-10">
 				{data?.map((project: any, index: number) => {
-					if (index >= limit) return null
+					if (!project.preview && preview) return null
 					return <Project item={project} key={index} index={index} />
 				})}
 			</ul>

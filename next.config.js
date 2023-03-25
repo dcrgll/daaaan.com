@@ -7,7 +7,7 @@ const nextConfig = {
 	experimental: {
 		appDir: true
 	},
-	async redirects() {
+	async redirects () {
 		return [
 			{
 				source: '/studentbeans',
@@ -52,6 +52,11 @@ const nextConfig = {
 			{
 				source: '/one-planet-plate',
 				destination: 'https://www.oneplanetplate.org',
+				permanent: false
+			},
+			{
+				source: '/conjurer',
+				destination: 'https://conjureruk.com',
 				permanent: false
 			}
 		]
