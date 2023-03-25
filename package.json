@@ -9,8 +9,7 @@
 		"lint": "next lint",
 		"format:fix": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|gql|graphql|mdx|vue)\"",
 		"format:check": "prettier --check \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|gql|graphql|mdx|vue)\"",
-		"ts:check": "tsc --noEmit",
-		"postbuild": "next-sitemap"
+		"ts:check": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@types/node": "18.15.3",
