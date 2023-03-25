@@ -4,7 +4,7 @@ export default function DarkModeToggle() {
 	const renderSunButton = () => {
 		return (
 			<button
-				id="header__moon"
+				id="sun_icon"
 				onClick={toLightMode}
 				title="Switch to light mode"
 				className="focus:shadow-outline relative hidden h-10 w-10 justify-end text-gray-50 focus:outline-none dark:flex"
@@ -32,10 +32,10 @@ export default function DarkModeToggle() {
 	const renderMoonButton = () => {
 		return (
 			<button
-				id="header__moon"
+				id="moon_icon"
 				onClick={toDarkMode}
 				title="Switch to dark mode"
-				className="focus:shadow-outline relative flex h-10 w-10 justify-end text-gray-500 focus:outline-none dark:hidden"
+				className="focus:shadow-outline relative flex h-10 w-10 justify-end text-gray-600 focus:outline-none dark:hidden"
 			>
 				<svg style={{ width: '24px', height: '24px' }} viewBox="0 0 24 24">
 					<path

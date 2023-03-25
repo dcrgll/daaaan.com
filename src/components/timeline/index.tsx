@@ -45,7 +45,7 @@ const Step = ({
 					{title}
 				</p>
 			</div>
-			<p className="ml-6 text-gray-700 dark:text-gray-400">{children}</p>
+			<p className="ml-6 text-gray-700 dark:text-gray-600">{children}</p>
 		</li>
 	)
 }
@@ -160,7 +160,7 @@ export default function Timeline() {
 						link={{
 							text: 'are building it',
 							href: 'payday',
-							color: 'text-green-400 dark:text-green-300'
+							color: 'text-green-600 dark:text-green-300'
 						}}
 					/>
 					.

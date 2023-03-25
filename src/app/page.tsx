@@ -3,7 +3,6 @@ import Content from 'components/content'
 import Title from 'components/title'
 import Projects from 'components/projects'
 import PrettyLink from 'components/pretty_link'
-import SubTitle from 'components/sub_title'
 
 export default function Page(): JSX.Element {
 	return (
@@ -12,7 +11,7 @@ export default function Page(): JSX.Element {
 			<Content>
 				<p>
 					Hey, I&apos;m{' '}
-					<span className="text-violet-400">
+					<span className="text-indigo-600 dark:text-indigo-300">
 						<strong>Dan</strong>
 					</span>
 					. I&apos;m a <strong>software developer</strong> currently playing the
@@ -22,7 +21,7 @@ export default function Page(): JSX.Element {
 							link={{
 								href: 'studentbeans',
 								text: 'StudentBeans',
-								color: 'text-teal-400'
+								color: 'text-violet-700 dark:text-violet-400'
 							}}
 						/>
 					</strong>
@@ -35,7 +34,7 @@ export default function Page(): JSX.Element {
 						link={{
 							href: 'payday',
 							text: 'Payday',
-							color: 'text-red-400'
+							color: 'text-red-600 dark:text-red-400'
 						}}
 					/>
 					,{' '}
@@ -43,7 +42,7 @@ export default function Page(): JSX.Element {
 						link={{
 							href: 'ayybee',
 							text: 'Ayybee',
-							color: 'text-orange-400'
+							color: 'text-blue-700 dark:text-blue-400'
 						}}
 					/>{' '}
 					and leaving a trail of half-completed projects behind me.
