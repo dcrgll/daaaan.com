@@ -141,7 +141,7 @@ export default function Timeline() {
 			<Year>2023</Year>
 			<ul>
 				<Step title="Promoted to mid-level engineer 💪">
-					Still orking on some cool stuff at StudentBeans, looking forward to
+					Still working on some cool stuff at StudentBeans, looking forward to
 					the challenges ahead.
 				</Step>
 			</ul>

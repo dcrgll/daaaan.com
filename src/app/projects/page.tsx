@@ -4,7 +4,7 @@ import Title from 'components/title'
 import Projects from 'components/projects'
 import Link from 'next/link'
 
-export default function Page(): JSX.Element {
+export default async function Page() {
 	return (
 		<>
 			<Title>Projects</Title>
@@ -20,6 +20,8 @@ export default function Page(): JSX.Element {
 					</Link>
 					.
 				</p>
+
+				{/* @ts-expect-error Server Component */}
 				<Projects limit={6} preview={false} />
 				<ContactLinks />
 			</Content>

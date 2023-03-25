@@ -48,6 +48,8 @@ export default function Page(): JSX.Element {
 					/>{' '}
 					and leaving a trail of half-completed projects behind me.
 				</p>
+
+				{/* @ts-expect-error Server Component */}
 				<Projects limit={3} preview />
 				<ContactLinks />
 			</Content>

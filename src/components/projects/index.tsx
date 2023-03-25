@@ -2,13 +2,16 @@ import Project from 'components/project'
 import SubTitle from 'components/sub_title'
 import Link from 'next/link'
 
-export default function Projects({
+export default async function Projects({
 	limit,
 	preview
 }: {
 	limit: number
 	preview: boolean
 }) {
+	const response = await getData()
+	const { data } = await response
+
 	return (
 		<div className="w-full">
 			{preview ? (
@@ -24,7 +27,7 @@ export default function Projects({
 				</div>
 			) : null}
 			<ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:gap-y-10">
-				{items.map((project, index) => {
+				{data?.map((project: any, index: Number) => {
 					if (index >= limit) return null
 					return <Project item={project} key={project.id} />
 				})}
@@ -33,32 +36,17 @@ export default function Projects({
 	)
 }
 
-const items = [
-	{
-		id: 1,
-		name: 'Payday',
-		category: 'Next, Tailwind, Firebase',
-		href: 'payday',
-		imageSrc: '/images/projects/payday.png',
-		imageAlt:
-			'Payday is an app that helps you manage your money, set goals and save money.'
-	},
-	{
-		id: 2,
-		name: 'One Planet Plate',
-		category: 'NextJS, Tailwind, Contentful',
-		href: 'one-planet-plate',
-		imageSrc: '/images/projects/one-planet-plate.png',
-		imageAlt:
-			'One Planet Plate is a worldwide restaurant campaign to address the inherent problems in our food system, and we’re calling on you to join the collective movement to vote with your fork.'
-	},
-	{
-		id: 3,
-		name: 'Casdron',
-		category: 'React, Shopify',
-		href: 'casdron',
-		imageSrc: '/images/projects/casdron.png',
-		imageAlt:
-			'Lithofin is renowned in the industry for its scientifically advanced products that clean, protect and maintain stone and tiles in great condition. Casdron Enterprises Limited has been the sole distributor of Lithofin products in the UK and Ireland since 1988.'
+async function getData() {
+	const res = await fetch(`${process.env.FETCH_URL}/api/projects/get_projects`, {
+		method: 'GET',
+		next: { revalidate: 10 }
+	})
+
+	if (!res.ok) {
+		throw new Error('Failed to fetch data')
 	}
-]
+
+	const response = await res.json()
+
+	return response
+}
