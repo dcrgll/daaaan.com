@@ -13,9 +13,9 @@ export default function PrettyLink({
 	const url = link.text === 'View Project' ? link.text : link.href
 
 	return (
-		<NextLink href={`/${url}`} legacyBehavior prefetch={false}>
+		<NextLink href={`/${link.href}`} legacyBehavior prefetch={false}>
 			<a
-				onClick={() => plausible(`Click: ${link.text}`)}
+				onClick={() => plausible(`Click: ${url}`)}
 				className={`font-bold hover:underline ${link.color}`}
 				rel="noopener noreferrer"
 				target="_blank"
