@@ -7,7 +7,7 @@ const nextConfig = {
 	experimental: {
 		appDir: true
 	},
-	async redirects () {
+	async redirects() {
 		return [
 			{
 				source: '/studentbeans',

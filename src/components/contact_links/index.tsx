@@ -25,7 +25,7 @@ const contactLinks = [
 
 export default function ContactLinks() {
 	return (
-		<div className="mt-4 mb-32 border-t-2 border-gray-100">
+		<div className="mt-4 mb-4 border-t-2 border-gray-100">
 			<p className="mt-4">Get in touch</p>
 			<ul className="mt-4 flex justify-between">
 				{contactLinks.map(link => {
