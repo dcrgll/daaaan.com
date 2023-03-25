@@ -21,6 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 export const metadata = {
 	title: 'Dan Cargill Builds Things',
 	keywords: ['Dan Cargill', 'React', 'JavaScript', 'Frontend', 'Developer'],
+	description: "You're into websites, I'm good at websites.",
 	creator: 'Dan Cargill',
 	openGraph: {
 		title: 'Dan Cargill Builds Things',

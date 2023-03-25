@@ -19,10 +19,10 @@ export default async function Projects({
 					<SubTitle>Projects</SubTitle>
 					<Link
 						href="/projects"
-						className="whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300"
+						className="flex items-center justify-center whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-600 hover:underline dark:text-indigo-300 dark:hover:text-indigo-200"
 					>
 						View all
-						<span aria-hidden="true"> &rarr;</span>
+						<span> &rarr;</span>
 					</Link>
 				</div>
 			) : null}

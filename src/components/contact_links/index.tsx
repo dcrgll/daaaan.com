@@ -4,22 +4,22 @@ const contactLinks = [
 	{
 		href: 'email',
 		text: 'Email',
-		color: 'text-red-400'
+		color: 'text-red-600 dark:text-red-400'
 	},
 	{
 		href: 'linkedin',
 		text: 'LinkedIn',
-		color: 'text-blue-400'
+		color: 'text-blue-600 dark:text-blue-400'
 	},
 	{
 		href: 'github',
 		text: 'Github',
-		color: 'text-gray-400'
+		color: 'text-gray-600 dark:text-gray-400'
 	},
 	{
 		href: 'discord',
 		text: 'Discord',
-		color: 'text-purple-400'
+		color: 'text-purple-600 dark:text-purple-400'
 	}
 ]
 

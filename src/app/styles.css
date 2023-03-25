@@ -11,6 +11,7 @@ h5,
 h6,
 p,
 body,
+span,
 .image-frame {
 	transition-property: color, background-color, border-color,
 		text-decoration-color, fill, stroke;
