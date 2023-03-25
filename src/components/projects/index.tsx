@@ -5,7 +5,6 @@ import Link from 'next/link'
 const contentful = require('contentful')
 import { getPlaiceholder } from 'plaiceholder'
 
-
 export default async function Projects({ preview }: { preview: boolean }) {
 	const data = await getData()
 
@@ -13,13 +12,15 @@ export default async function Projects({ preview }: { preview: boolean }) {
 		<div className="mb-8 w-full">
 			<div className="mt-16 flex space-x-4">
 				<SubTitle>Projects</SubTitle>
-				<Link
-					href="/projects"
-					className="flex items-center justify-center whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-600 hover:underline dark:text-indigo-300 dark:hover:text-indigo-200"
-				>
-					View all
-					<span> &rarr;</span>
-				</Link>
+				{preview ? (
+					<Link
+						href="/projects"
+						className="flex items-center justify-center whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-600 hover:underline dark:text-indigo-300 dark:hover:text-indigo-200"
+					>
+						View all
+						<span> &rarr;</span>
+					</Link>
+				) : null}
 			</div>
 
 			<ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:gap-y-10">
@@ -40,7 +41,7 @@ async function getData() {
 
 	const data = await client
 		.getEntries({
-			order: '-sys.createdAt',
+			order: '-sys.createdAt'
 		})
 		.then((projects: any) => {
 			return modifyObjects(projects.items)
