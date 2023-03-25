@@ -7,7 +7,7 @@ const nextConfig = {
 	experimental: {
 		appDir: true
 	},
-	async redirects() {
+	async redirects () {
 		return [
 			{
 				source: '/studentbeans',
@@ -36,7 +36,7 @@ const nextConfig = {
 			},
 			{
 				source: '/linkedin',
-				destination: 'https://www.linkedin.com/in/dcrgll',
+				destination: 'https://www.linkedin.com/in/daaaan',
 				permanent: true
 			},
 			{
