@@ -2,7 +2,7 @@ import ContactLinks from 'components/contact_links'
 import Content from 'components/content'
 import Title from 'components/title'
 import Projects from 'components/projects'
-import Link from 'next/link'
+import PrettyLink from 'components/pretty_link'
 
 export default async function Page() {
 	return (
@@ -15,9 +15,13 @@ export default async function Page() {
 					<br />
 					<br />
 					{'>'} I&apos;m currently available to{' '}
-					<Link href="/hire-me" className="underline">
-						hire
-					</Link>
+					<PrettyLink
+						link={{
+							href: 'hire-me',
+							text: 'hire',
+							color: 'underline text-gray-800 dark:text-gray-50'
+						}}
+					/>
 					.
 				</p>
 
