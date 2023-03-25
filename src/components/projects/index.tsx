@@ -27,9 +27,9 @@ export default async function Projects({
 				</div>
 			) : null}
 			<ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:gap-y-10">
-				{data?.map((project: any, index: Number) => {
+				{data?.map((project: any, index: number) => {
 					if (index >= limit) return null
-					return <Project item={project} key={project.id} />
+					return <Project item={project} key={index} index={index} />
 				})}
 			</ul>
 		</div>
@@ -37,10 +37,7 @@ export default async function Projects({
 }
 
 async function getData() {
-	const res = await fetch(`${process.env.FETCH_URL}/api/projects/get_projects`, {
-		method: 'GET',
-		next: { revalidate: 10 }
-	})
+	const res = await fetch(`${process.env.FETCH_URL}/api/projects/get_projects`)
 
 	if (!res.ok) {
 		throw new Error('Failed to fetch data')

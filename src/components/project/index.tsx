@@ -2,7 +2,8 @@ import Image from 'next/image'
 import PrettyLink from 'components/pretty_link'
 
 export default function Project({
-	item
+	item,
+	index
 }: {
 	item: {
 		id: number
@@ -13,7 +14,9 @@ export default function Project({
 		altText: string
 		blur: string
 	}
+	index: number
 }) {
+	console.log(index)
 	return (
 		<li className="group relative">
 			<div className="mb-1 flex items-center justify-between space-x-8 text-base font-medium text-gray-800 dark:text-gray-50">
@@ -45,7 +48,9 @@ export default function Project({
 					height={1020}
 					placeholder="blur"
 					blurDataURL={item.blur}
+					priority={index === 0 ? true : false}
 				/>
+
 				<div className="flex items-end" aria-hidden="true">
 					<div className="text-gray-90 w-full rounded-md bg-opacity-75 py-2 px-4 text-center text-sm font-medium dark:text-gray-50">
 						<PrettyLink
