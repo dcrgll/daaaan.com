@@ -30,7 +30,11 @@ export default async function Projects({ preview }: { preview: boolean }) {
 }
 
 async function getData() {
-	const res = await fetch(`${process.env.FETCH_URL}/api/projects/get_projects`)
+	const res = await fetch(`${process.env.FETCH_URL}/api/projects/get_projects`, {
+		next:{
+			revalidate: 600
+		}
+	})
 
 	if (!res.ok) {
 		throw new Error('Failed to fetch data')
