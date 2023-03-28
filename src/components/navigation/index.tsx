@@ -15,6 +15,10 @@ const navigationLinks = [
 	{
 		href: '/projects',
 		label: 'Projects'
+	},
+	{
+		href: '/cv',
+		label: 'CV'
 	}
 ]
 
