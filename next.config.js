@@ -10,6 +10,11 @@ const nextConfig = {
 	async redirects() {
 		return [
 			{
+				source: '/cv',
+				destination: 'https://cv.cargill.dev',
+				permanent: true
+			},
+			{
 				source: '/studentbeans',
 				destination: 'https://studentbeans.com',
 				permanent: true
