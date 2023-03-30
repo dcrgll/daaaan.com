@@ -17,7 +17,7 @@ export default function Project({
 	index: number
 }) {
 	return (
-		<li className="group relative">
+		<li className="group relative" role="listitem">
 			<div className="mb-1 flex items-center justify-between space-x-8 text-base font-medium text-gray-800 dark:text-gray-50">
 				<PrettyLink
 					link={{

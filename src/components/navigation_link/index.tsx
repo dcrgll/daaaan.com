@@ -4,14 +4,16 @@ import Link from 'next/link'
 export default function NavigationLink({
 	children,
 	href,
-	active
+	active,
+	prefetch = true
 }: {
 	children: React.ReactNode
 	href: string
 	active?: boolean
+	prefetch?: boolean
 }) {
 	return (
-		<Link href={href}>
+		<Link href={href} prefetch={prefetch}>
 			<span
 				className={`px-[10px] py-[5px] ${
 					active ? 'bg-gray-100 text-gray-800 ' : 'dark:text-gray-50'

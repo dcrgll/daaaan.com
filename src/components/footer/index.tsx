@@ -10,14 +10,15 @@ export default function Footer() {
 				>
 					{links.map((link, i) => {
 						return (
-							<PrettyLink
-								link={{
-									href: link.href,
-									text: link.name,
-									color: 'text-gray-800 dark:text-gray-50 font-medium'
-								}}
-								key={i}
-							/>
+							<li key={i} role="listitem">
+								<PrettyLink
+									link={{
+										href: link.href,
+										text: link.name,
+										color: 'text-gray-800 dark:text-gray-50 font-medium'
+									}}
+								/>
+							</li>
 						)
 					})}
 				</ul>

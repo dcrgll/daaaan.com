@@ -23,7 +23,10 @@ export default async function Projects({ preview }: { preview: boolean }) {
 				) : null}
 			</div>
 
-			<ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:gap-y-10">
+			<ul
+				className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:gap-y-10"
+				role="list"
+			>
 				{data?.map((project: any, index: number) => {
 					if (preview && !project.preview) return null
 					return <Project item={project} key={index} index={index} />
