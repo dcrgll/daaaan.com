@@ -15,13 +15,10 @@ export default async function Page() {
 					<br />
 					<br />
 					{'>'} I&apos;m currently available to{' '}
-					<PrettyLink
-						link={{
-							href: 'hire-me',
-							text: 'hire',
-							color: 'underline text-gray-800 dark:text-gray-50'
-						}}
-					/>
+					<span 
+					className='underline text-gray-800 dark:text-gray-50'>
+					hire
+					</span>
 					.
 				</p>
 
