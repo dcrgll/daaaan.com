@@ -62,7 +62,7 @@ export default function Page(): JSX.Element {
 				</p>
 				<div>
 					<h2 className="mt-8 text-2xl font-bold">FAQ</h2>
-					<h3 className="mt-4 mb-2 underline">
+					<h3 className="mb-2 mt-4 underline">
 						I want a website, how do I get one?
 					</h3>
 					<p>
@@ -75,11 +75,11 @@ export default function Page(): JSX.Element {
 						</a>{' '}
 						and I&apos;ll get back to you asap.
 					</p>
-					<h3 className="mt-4 mb-2 underline">Why are you doing this?</h3>
+					<h3 className="mb-2 mt-4 underline">Why are you doing this?</h3>
 					<p>
 						I want to <del>make money</del> help people.
 					</p>
-					<h3 className="mt-4 mb-2 underline">
+					<h3 className="mb-2 mt-4 underline">
 						Why does this website look bad?
 					</h3>
 					<p>I promise I&apos;ll spend longer on yours.</p>
