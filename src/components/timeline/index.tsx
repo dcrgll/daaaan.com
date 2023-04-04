@@ -38,7 +38,7 @@ const Step = ({
 				</svg>
 				<p className="font-semibold text-gray-800 dark:text-gray-50">{title}</p>
 			</div>
-			<p className="ml-6 text-gray-700 dark:text-gray-600">{children}</p>
+			<p className="ml-6 text-gray-700 dark:text-gray-50">{children}</p>
 		</li>
 	)
 }

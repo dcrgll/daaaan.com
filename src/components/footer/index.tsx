@@ -22,7 +22,7 @@ export default function Footer() {
 						)
 					})}
 				</ul>
-				<span className="flex items-center space-x-1">
+				<span className="flex items-center space-x-1 dark:text-gray-50">
 					<span>©</span>
 					<span>2023</span>
 					<span>Dan Cargill</span>

@@ -38,7 +38,7 @@ export default function Project({
 					)
 				})}
 			</ul>
-			<div className="aspect-w-4 aspect-h-3 image-frame overflow-hidden rounded-lg bg-gray-50 transition dark:bg-gray-900">
+			<div className="aspect-w-4 aspect-h-3 image-frame overflow-hidden rounded-lg bg-gray-50 transition dark:bg-brand">
 				<Image
 					src={item.image}
 					alt={item.altText}
