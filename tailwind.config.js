@@ -7,6 +7,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			colors: {
+				brand: '#222'
+			},
 			animation: {
 				marquee: 'marquee 25s linear infinite',
 				marquee2: 'marquee2 25s linear infinite'

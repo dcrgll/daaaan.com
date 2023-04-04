@@ -5,7 +5,7 @@ export default function Footer() {
 		<footer className="mx-auto mt-8 w-full sm:hidden">
 			<div className="flex flex-col space-y-4 md:flex-row md:justify-between md:space-y-0">
 				<ul
-					className="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4"
+					className="flex flex-col space-y-2 sm:flex-row sm:space-x-4 sm:space-y-0"
 					role="list"
 				>
 					{links.map((link, i) => {
@@ -22,7 +22,7 @@ export default function Footer() {
 						)
 					})}
 				</ul>
-				<span className="flex items-center space-x-1">
+				<span className="flex items-center space-x-1 dark:text-gray-50">
 					<span>©</span>
 					<span>2023</span>
 					<span>Dan Cargill</span>

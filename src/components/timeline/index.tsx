@@ -38,7 +38,7 @@ const Step = ({
 				</svg>
 				<p className="font-semibold text-gray-800 dark:text-gray-50">{title}</p>
 			</div>
-			<p className="ml-6 text-gray-700 dark:text-gray-600">{children}</p>
+			<p className="ml-6 text-gray-700 dark:text-gray-50">{children}</p>
 		</li>
 	)
 }
@@ -189,7 +189,7 @@ export default function Timeline() {
 			) : (
 				<button
 					type="button"
-					className="my-4 mx-auto flex items-center rounded-md px-4 py-2 text-sm font-medium text-gray-900 dark:text-gray-100"
+					className="mx-auto my-4 flex items-center rounded-md px-4 py-2 text-sm font-medium text-gray-900 dark:text-gray-100"
 					onClick={() => showFullTimeline(true)}
 				>
 					See More

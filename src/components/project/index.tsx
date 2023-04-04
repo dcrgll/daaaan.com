@@ -38,7 +38,7 @@ export default function Project({
 					)
 				})}
 			</ul>
-			<div className="aspect-w-4 aspect-h-3 image-frame overflow-hidden rounded-lg bg-gray-50 transition dark:bg-gray-900">
+			<div className="aspect-w-4 aspect-h-3 image-frame overflow-hidden rounded-lg bg-gray-50 transition dark:bg-brand">
 				<Image
 					src={item.image}
 					alt={item.altText}
@@ -51,7 +51,7 @@ export default function Project({
 				/>
 
 				<div className="flex items-end">
-					<div className="text-gray-90 w-full rounded-md bg-opacity-75 py-2 px-4 text-center text-sm font-medium dark:text-gray-50">
+					<div className="text-gray-90 w-full rounded-md bg-opacity-75 px-4 py-2 text-center text-sm font-medium dark:text-gray-50">
 						<PrettyLink
 							link={{
 								href: item.href,
