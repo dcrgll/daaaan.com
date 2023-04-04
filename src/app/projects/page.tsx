@@ -15,9 +15,8 @@ export default async function Page() {
 					<br />
 					<br />
 					{'>'} I&apos;m currently available to{' '}
-					<span 
-					className='underline text-gray-800 dark:text-gray-50'>
-					hire
+					<span className="text-gray-800 underline dark:text-gray-50">
+						hire
 					</span>
 					.
 				</p>

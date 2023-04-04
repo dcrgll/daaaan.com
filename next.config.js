@@ -50,6 +50,16 @@ const nextConfig = {
 				permanent: true
 			},
 			{
+				source: '/instagram',
+				destination: 'https://www.instagram.com/dncrgll',
+				permanent: true
+			},
+			{
+				source: '/soundcloud',
+				destination: 'https://soundcloud.com/dncrgll',
+				permanent: true
+			},
+			{
 				source: '/casdron',
 				destination: 'https://casdron.co.uk',
 				permanent: false

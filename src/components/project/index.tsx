@@ -51,7 +51,7 @@ export default function Project({
 				/>
 
 				<div className="flex items-end">
-					<div className="text-gray-90 w-full rounded-md bg-opacity-75 py-2 px-4 text-center text-sm font-medium dark:text-gray-50">
+					<div className="text-gray-90 w-full rounded-md bg-opacity-75 px-4 py-2 text-center text-sm font-medium dark:text-gray-50">
 						<PrettyLink
 							link={{
 								href: item.href,

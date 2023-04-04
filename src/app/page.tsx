@@ -24,12 +24,8 @@ export default function Page(): JSX.Element {
 								color: 'text-violet-700 dark:text-violet-400'
 							}}
 						/>
-					</strong>
-					.
-				</p>
-
-				<p className="mt-4">
-					I&apos;m also building{' '}
+					</strong>{' '}
+					and building {''}
 					<PrettyLink
 						link={{
 							href: 'payday',
@@ -37,15 +33,27 @@ export default function Page(): JSX.Element {
 							color: 'text-red-600 dark:text-red-400'
 						}}
 					/>
-					,{' '}
+					.
+				</p>
+
+				<p className="mt-4">
+					When not knee deep in javascript, I can be found{' '}
 					<PrettyLink
 						link={{
-							href: 'ayybee',
-							text: 'Ayybee',
-							color: 'text-blue-700 dark:text-blue-400'
+							href: 'soundcloud',
+							text: 'writing music',
+							color: 'text-blue-600 dark:text-blue-400'
 						}}
 					/>{' '}
-					and leaving a trail of half-completed projects behind me.
+					and{' '}
+					<PrettyLink
+						link={{
+							href: 'instagram',
+							text: 'travelling',
+							color: 'text-green-600 dark:text-green-400'
+						}}
+					/>
+					.
 				</p>
 
 				{/* @ts-expect-error Server Component */}
