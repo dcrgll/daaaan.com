@@ -6,14 +6,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install modules
-        run: yarn
+        run: npm install
       - name: Run Prettier
-        run: yarn format:fix
+        run: npm run format:fix
   ESLint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Install modules
-        run: yarn
+        run: npm install
       - name: Run ESLint
-        run: yarn lint
+        run: npm run lint
