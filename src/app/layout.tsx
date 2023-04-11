@@ -26,11 +26,11 @@ export const metadata = {
 	openGraph: {
 		title: 'Dan Cargill Builds Things',
 		description: "You're into websites, I'm good at websites.",
-		url: 'https://www.cargill.dev',
+		url: 'https://cargill.dev',
 		siteName: 'Dan Cargill Builds Things',
 		images: [
 			{
-				url: 'https://www.cargill.dev/daaaan-og.png',
+				url: 'https://cargill.dev/daaaan-og.png',
 				width: 1920,
 				height: 1080
 			}
@@ -43,7 +43,7 @@ export const metadata = {
 		creatorId: '85074832',
 		card: 'summary_large_image',
 		siteId: '85074832',
-		images: ['https://www.cargill.dev/daaaan-og.png']
+		images: ['https://cargill.dev/daaaan-og.png']
 	},
 	icons: {
 		apple: '/apple-touch-icon.png',

@@ -50,7 +50,7 @@ export default function Page(): JSX.Element {
 						tools that help users find new music to enjoy{' '}
 					</a>
 					and{' '}
-					<a href="https://www.cargill.dev" className="text-teal-600 underline">
+					<a href="https://cargill.dev" className="text-teal-600 underline">
 						silly lil things I like
 					</a>
 					.
