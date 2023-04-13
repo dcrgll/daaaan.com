@@ -50,6 +50,11 @@ const nextConfig = {
 				permanent: true
 			},
 			{
+				source: '/twitter',
+				destination: 'https://www.twitter.com/dcrgll',
+				permanent: true
+			},
+			{
 				source: '/instagram',
 				destination: 'https://www.instagram.com/dncrgll',
 				permanent: true
