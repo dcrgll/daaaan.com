@@ -78,6 +78,11 @@ const nextConfig = {
 				source: '/conjurer',
 				destination: 'https://conjureruk.com',
 				permanent: false
+			},
+			{
+				source: '/carton',
+				destination: 'https://bycarton.io',
+				permanent: false
 			}
 		]
 	},
